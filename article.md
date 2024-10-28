@@ -812,7 +812,7 @@ We also have a closer look at all matching results for the four clips that can b
 TV_dataset_finder.show_notebook_sequence(contains_video(TV_dataset_sequences, 'Hundra svenska år_Nu har jag kastat min blå overall.mkv', TV_dataset_finder), show_limit=200, show_shift=False, frame_resize=(70,70), convert_format='JPEG')
 ```
 
-<!-- #region editable=true slideshow={"slide_type": ""} tags ["anchor-four-clips"]-->
+<!-- #region editable=true slideshow={"slide_type": ""} tags ["anchor-four-clips"] -->
 > ℹ️ *Note from the editors:* This article is published within a beta version of our website design to make the reader's experience better. In some code cells, a "show_limit" parameter can be changed by the reader if they want to display more images. In this case, the author initially set show_limit=200.
 <!-- #endregion -->
 
