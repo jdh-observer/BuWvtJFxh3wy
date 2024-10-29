@@ -573,7 +573,7 @@ def demonstration_filter(sequences):
 demo_finder.show_notebook_sequence(demo_sequences,show_limit=100, frame_resize=(100,100), sort_order=demonstration_filter, convert_format='JPEG')
 ```
 
-<!-- #region tags=["narrative"] -->
+<!-- #region tags=["narrative", "anchor-possibilities-pitfalls"] -->
 ### Possibilities and pitfalls
 <!-- #endregion -->
 
@@ -606,7 +606,7 @@ As mentioned in the introduction to this article, the SF-archive – in Swedish,
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
-The selected videos from the SF-archive vary in lenght but are usually between five to fifteen minutes long. Hence, our SF-dataset contains approximately 10,000 hours of moving image material. Regarding the TV series, we chose to work with 34 episodes taken from four different series, all focusing on Swedish 20th-century history. Put together, our TV-dataset consists of roughly 30 hours of film. When preparing the TV dataset, we edited out all introductory and closing texts from the films. This was done to minimize the risk of finding excessive matches with texts and symbols in the matching results ([see discussion in section Potentials and Pitfalls](#anchor-potentialls-and-pitfalls)). Most (but not all) of the TV-series episodes can be found on RosaMannen’s YouTube channel, and missing episodes were added through The Swedish Media Database ([SMDB](https://smdb.kb.se/smdb/english/)) which lets university staff order audiovisual content, giving access to streamed copies. All episodes in our selected TV series contain footage from the SF-archive – but also interviews, talking heads, stills, or other inserted materials. Hence, we knew that the VRD we would detect several visual similarities, but that there would also be sequences without any matches at all.
+The selected videos from the SF-archive vary in lenght but are usually between five to fifteen minutes long. Hence, our SF-dataset contains approximately 10,000 hours of moving image material. Regarding the TV series, we chose to work with 34 episodes taken from four different series, all focusing on Swedish 20th-century history. Put together, our TV-dataset consists of roughly 30 hours of film. When preparing the TV dataset, we edited out all introductory and closing texts from the films. This was done to minimize the risk of finding excessive matches with texts and symbols in the matching results ([see discussion in section Possibilities and Pitfalls](#anchor-possibilities-pitfalls)). Most (but not all) of the TV-series episodes can be found on RosaMannen’s YouTube channel, and missing episodes were added through The Swedish Media Database ([SMDB](https://smdb.kb.se/smdb/english/)) which lets university staff order audio-visual content, giving access to streamed copies. All episodes in our selected TV series contain footage from the SF-archive – but also interviews, talking heads, stills, or other inserted materials. Hence, we knew that the VRD we would detect several visual similarities, but that there would also be sequences without any matches at all.
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
@@ -725,7 +725,7 @@ As can be seen in the bar plot, it appears as if footage from primarily two vide
 We proceed by looking at the matching results as thumbnail previews. The quality of these matches will give hints regarding how well the distance metric threshold was set in the `SequenceFinder` step above. If we find that many sequences that do not match, perhaps the distance metric threshold is set too high. Similarly, if all matches look good but a bit short, perhaps the distance metric threshold is set too low. In other words, we can use this data to adjust the previous filtering settings according to our specific dataset. As previously noted, the distribution of distance metric values will for example be impacted by the choice of neural net, the layer from which to extract the fingerprints, the size of the dataset, and the quality of the source material. We recommend finding a threshold that is slightly too high (rather than too low), to avoid missing relevant matches. Invalid matches can then be filtered out using other tools. In this notebook, we limit the number of shown sequences to 10 in the example below. During our analysis, however, the 200 longest sequences were analysed.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-unwanted-frames).
 <!-- #endregion -->
 
@@ -748,7 +748,7 @@ print(f'Before removal: {len(before_set)} sequences.\nAfter removal: {len(after_
 To double-check what sequences were removed in the previous step, we run the code below. This will provide a sample 50 sequences that were filtered out using the `unwanted_sequences` feature.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-stacked-bar-plot).
 <!-- #endregion -->
 
@@ -776,7 +776,7 @@ As can be seen in the bar plot, the number of found sequences is now highly redu
 We have a look at the remaining matching results as thumbnail previews once more. The longest found sequence will be shown first, and we decide to only show the 200 longest sequences found.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-long-section).
 <!-- #endregion -->
 
@@ -792,7 +792,7 @@ When looking at these thumbnails, we notice that a few unwanted sequences remain
 Next, we decide to drill deeper into the matching results by having a closer look at reuse based on some specific TV series episodes. Using the latest bar plot, we begin by looking at the episode with the most identified instances of reuse (i.e. the video entitled "Förväntningarnas tid_Vägen genom krisen").
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-filter-again).
 <!-- #endregion -->
 
@@ -804,17 +804,13 @@ TV_dataset_finder.show_notebook_sequence(contains_video(TV_dataset_sequences, 'F
 We also have a closer look at all matching results for the four clips that can be found furthest to the left in the bar plot above.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-four-clips).
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics"]
 TV_dataset_finder.show_notebook_sequence(contains_video(TV_dataset_sequences, 'Hundra svenska år_Nu har jag kastat min blå overall.mkv', TV_dataset_finder), show_limit=200, show_shift=False, frame_resize=(70,70), convert_format='JPEG')
 ```
-
-<!-- #region editable=true slideshow={"slide_type": ""} tags ["anchor-four-clips"] -->
-> ℹ️ *Note from the editors:* This article is published within a beta version of our website design to make the reader's experience better. In some code cells, a "show_limit" parameter can be changed by the reader if they want to display more images. In this case, the author initially set show_limit=200.
-<!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics"]
 TV_dataset_finder.show_notebook_sequence(contains_video(TV_dataset_sequences, 'Hundra svenska år_Folkhemmet tur och retur.webm', TV_dataset_finder), show_limit=200, show_shift=False, frame_resize=(70,70), convert_format='JPEG')
@@ -1022,7 +1018,7 @@ print(f'Before removal: {len(before_set_combined)} sequences.\nAfter removal: {l
 To double-check what sequences were removed in the previous step, we output a sample of 50 sequences that were removed using `remove_unwanted_sequences` functionality.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-talking-heads).
 <!-- #endregion -->
 
@@ -1050,7 +1046,7 @@ As can be seen in this plot, footage from the video SF27891.1 appears to have be
 We also output the matching results as thumbnail previews, sorted with the longest found sequence first. We limit the number of shown matching results to the 200 longest sequences. To enlarge the thumbnail previews when the notebook is viewed in Jupyter Notebooks, it is possible to double-click on the sequences. In the Journal of Digital History's rendering of the text, it is possible to zoom in on the thumbnails by opening them in a separate window by right-clicking on the images, or copying/pasting the link into a new browser window, for example.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-zooming).
 <!-- #endregion -->
 
@@ -1074,7 +1070,7 @@ An alternative to using the feature for removing unwanted frames could have invo
 To further inspect the search results, we look at the 200 longest sequences from the 5 most reused videos, as seen in the stacked bar plot above. We begin by looking at the matching results for the video SF2789.1, that is, the video clip with the most identified instances of reused sequences.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-lower-distance-metric).
 <!-- #endregion -->
 
@@ -1090,7 +1086,7 @@ In this case, we find that a particular sequence from the video SF2789.1.mpg has
 We add the sequences showing Prince Wilhelm and other talking heads to the Excel spreadsheet "TV_unwanted_frames_2.xlsx" and continue by studying the second most reused video clip in the same way, zooming in on the matching results for the video SF2410A-C.1, which depics a [military exercise](https://smdb.kb.se/catalog/search?q=SF2410&x=0&y=0), performed by the Swedish Navy in 1918.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-military-exercise).
 <!-- #endregion -->
 
@@ -1110,7 +1106,7 @@ We add the remaining uninteresting ocean horizon sequences to the "Unwanted_fram
 When the updated Excel sheet is finished, we apply the `remove_unwanted_sequences` function once more and output a sample of what the removed sequences look like to double-check the filtering.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](anchor-remove-sequences).
 <!-- #endregion -->
 
@@ -1134,7 +1130,7 @@ combined_project.show_most_reused_files(combined_project_sequences, video_list=T
 And output the remaining matching results as thumbnail previews. Once more, the longest found sequence will be shown first and we limit the number of shown sequences to 200.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-thumbnail).
 <!-- #endregion -->
 
@@ -1146,7 +1142,7 @@ combined_project_finder.show_notebook_sequence(combined_project_sequences, show_
 Last, we also have a look at thumbnail previews in the 5 remaining SF clips that have been most frequently reused, showing the most reused clip first.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 > ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-reused-clip).
 <!-- #endregion -->
 
