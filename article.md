@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.14.4
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -39,7 +39,7 @@ Department of Art, Media, Philosophy, University of Basel.
 
 <!-- #endregion -->
 
-```python tags=["cover"]
+```python
 import os
 from ipywidgets import Layout
 from io import BytesIO
@@ -63,7 +63,7 @@ for gpu in gpus:
   tf.config.experimental.set_memory_growth(gpu, True)
 ```
 
-```python tags=["cover"]
+```python
 from pathlib import Path
 from IPython.display import Image, display
 
