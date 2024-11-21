@@ -95,6 +95,8 @@ Digital methods, Machine learning, Cultural reuse, Video archives
 
 <!-- #region tags=["disclaimer"] -->
 Excerpts from this article have been published in Eriksson, Skotare & Snickars. 2022. 'Understanding Gardar Sahlberg with neural nets: On algorithmic reuse of the Swedish SF archive' in Journal of Scandinavian Cinema, Volume 12(3). p. 225 - 247.
+
+This article was submitted on 8 May 2023, accepted on 11 May 2024 and published on 25 November 2024. This exceptionally long delay is mainly due to technical difficulties requiring the *Journal of Digital History*'s publication platform to be adapted.
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
@@ -397,10 +399,6 @@ On the whole, the VRD's matching results are meant to function as a guide that p
 
 <!-- #region tags=["hermeneutics"] -->
 We adjust the frame size and number of shown sequences and have a look at the final matching results. Note that the match mean distance values shown above the sequences may be higher than the previously set distance metric threshold. This is normal and expected, due to the merging of overlapping sequences.
-<!-- #endregion -->
-
-<!-- #region slideshow={"slide_type": ""} tags=["hermeneutics", "hidden"] -->
-NOTE TO PEER REVIEWER FROM THE AUTHORS: if you are reading this in the journal's preview/rendering of the article you will be shown *a lot* of sequence matches below. We are aware that this creates a terrible reading experience and apologize for the inconvenience. At the moment, we are having a dialogue with the journal editors regarding the possibility to collapse cell outputs into a scrollable cell, which would make it much easier to read the hermeneutical layer. If you are reading this in Jupyter notebook, you will get a sense of what we want it to look like. If the journal is unable to meet our request to implement scrollable cell outputs, we are prepared to seriously revise how much data/output is shown in the hermeneutical layer. For now, however, we let the data remain as it is.
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
@@ -719,7 +717,7 @@ We proceed by looking at the matching results as thumbnail previews. The quality
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-unwanted-frames).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-unwanted-frames).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -742,7 +740,7 @@ To double-check what sequences were removed in the previous step, we run the cod
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-stacked-bar-plot).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-stacked-bar-plot).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -770,7 +768,7 @@ We have a look at the remaining matching results as thumbnail previews once more
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-long-section).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-long-section).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -786,7 +784,7 @@ Next, we decide to drill deeper into the matching results by having a closer loo
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-filter-again).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-filter-again).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -798,7 +796,7 @@ We also have a closer look at all matching results for the four clips that can b
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} tags=["hermeneutics"] -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-four-clips).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-four-clips).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1012,7 +1010,7 @@ To double-check what sequences were removed in the previous step, we output a sa
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-talking-heads).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-talking-heads).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1040,7 +1038,7 @@ We also output the matching results as thumbnail previews, sorted with the longe
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-zooming).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-zooming).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1064,7 +1062,7 @@ To further inspect the search results, we look at the 200 longest sequences from
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-lower-distance-metric).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-lower-distance-metric).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1080,7 +1078,7 @@ We add the sequences showing Prince Wilhelm and other talking heads to the Excel
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-military-exercise).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-military-exercise).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1100,7 +1098,7 @@ When the updated Excel sheet is finished, we apply the `remove_unwanted_sequence
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](anchor-remove-sequences).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-remove-sequences).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1124,7 +1122,7 @@ And output the remaining matching results as thumbnail previews. Once more, the 
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-thumbnail).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-thumbnail).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
@@ -1136,7 +1134,7 @@ Last, we also have a look at thumbnail previews in the 5 remaining SF clips that
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": ""} -->
-> ℹ️ *Note from the editors:* Extracting all sequences in the following code example is beyond the scope of this article due to the extensive size of the source material. We invite readers to proceed directly to the next section [here](#anchor-reused-clip).
+> ℹ️ *Note from the editors:* Extracting all the sequences in the following example may make reading difficult, due to the large size of the source material. If the reader wishes, we invite them to proceed directly to the next section [here](#anchor-reused-clip).
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": ""} tags=["hermeneutics"]
