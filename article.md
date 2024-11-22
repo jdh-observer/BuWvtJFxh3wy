@@ -18,6 +18,11 @@ jupyter:
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
+### Maria  Eriksson [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7534-4268)
+Department of Art, Media, Philosophy, University of Basel.
+<!-- #endregion -->
+
+<!-- #region tags=["contributor"] -->
 ### Tomas  Skotare [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-8445-0559)
 Humlab, Umeå University.
 
@@ -26,11 +31,6 @@ Humlab, Umeå University.
 <!-- #region tags=["contributor"] -->
 ### Pelle  Snickars [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5122-1549)
 Department of Art and Cultural Sciences, Lund University.
-<!-- #endregion -->
-
-<!-- #region tags=["contributor"] -->
-### Maria  Eriksson [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7534-4268)
-Department of Art, Media, Philosophy, University of Basel.
 <!-- #endregion -->
 
 <!-- #region tags=["copyright"] -->
