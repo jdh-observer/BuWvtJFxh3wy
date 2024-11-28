@@ -49,9 +49,6 @@ import sys
 import base64
 import plotly.io as pio
 import kaleido
-```
-
-```python
 from pathlib import Path
 from IPython.display import Image, display
 
