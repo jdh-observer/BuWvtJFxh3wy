@@ -48,7 +48,6 @@ import pandas as pd
 import sys
 import base64
 import plotly.io as pio
-pio.renderers.default = "png"
 import kaleido
 ```
 
